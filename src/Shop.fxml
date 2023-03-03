@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingListEx">
+   <children>
+      <TitledPane animated="false" layoutY="1.0" prefHeight="309.0" prefWidth="594.0" text="Shopping List" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="201.0" prefWidth="286.0">
+               <children>
+                  <Button fx:id="AddButton" layoutX="72.0" layoutY="234.0" mnemonicParsing="false" onAction="#AddListener" text="Add" />
+                  <Button fx:id="RemoveButton" layoutX="178.0" layoutY="234.0" mnemonicParsing="false" onAction="#RemoveListener" text="Remove" />
+                  <Button fx:id="SaveButton" layoutX="366.0" layoutY="234.0" mnemonicParsing="false" onAction="#SaveListener" text="Save" />
+                  <Button fx:id="LoadButton" layoutX="478.0" layoutY="234.0" mnemonicParsing="false" onAction="#LoadListener" text="Load" />
+                  <ListView fx:id="listview" layoutX="351.0" layoutY="28.0" prefHeight="200.0" prefWidth="200.0" />
+                  <TextField fx:id="textfield" layoutX="59.0" layoutY="103.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
